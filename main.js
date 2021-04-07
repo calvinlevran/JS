@@ -1,11 +1,19 @@
-// ES5
-var myName = "Calvin"
-myName = "mik"
-console.log(myName)
+//ambil element
+const skills = document.getElementById("skills");
+const primarySkills = document.getElementById("primarySkill");
 
-// ES6
-//const / constant
-const myCar = "Mazda EX-7"
-// const myCar = "Honda Freed"
-// myCar = "Honda ABC"
-console.log(myCar);
+const mySkills = ["ES6", "Git", "Web Development"];
+
+//map
+const printSkillsMap = mySkills.map((skill) => {
+    return skill;
+});
+
+skills.innerHTML = printSkillsMap;
+
+//filter
+const printPrimarySkill = mySkills.filter((skill)=>{
+    return skill === "ES6";
+})
+
+primarySkill.innerHTML - printPrimarySkill;
